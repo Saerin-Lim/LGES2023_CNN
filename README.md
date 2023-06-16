@@ -14,13 +14,7 @@ drive.mount('/content/drive')
 !git clone https://github.com/Saerin-Lim/LGES2023_CNN.git
 ```
 
-3. 데이터 zip 풀기(Local PC로 실습하는 경우 실행 x)
-```py
-# change directory
-%cd /content/LGES2023_CNN/
-```
-
-4. cat_dog data 풀기
+3. cat_dog data 풀기
 ```py
 # change directory
 %cd /content/LGES2023_CNN/
@@ -31,7 +25,7 @@ dog_cat_zip.extractall('./data')
 dog_cat_zip.close()
 ```
 
-5. CIFAR10 data 다운로드
+4. CIFAR10 data 다운로드
 ```py
 # 학습 데이터셋 다운로드
 datasets.CIFAR10('./data', train=True, download=True)
