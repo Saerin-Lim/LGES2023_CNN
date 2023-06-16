@@ -4,7 +4,7 @@
 
 1. 구글 드라이브 연동(Local PC로 실습하는 경우 실행 x)
 ```py
-import zipfile
+import zipfile, tarfile
 from google.colab import drive
 drive.mount('/content/drive')
 ```
@@ -30,3 +30,13 @@ dog_cat_zip = zipfile.ZipFile('./data/dog_cat.zip')
 dog_cat_zip.extractall('./data')
 dog_cat_zip.close()
 ```
+
+5. CIFAR10 data 다운로드
+```py
+# 학습 데이터셋 다운로드
+datasets.CIFAR10('./data', train=True, download=True)
+cifar10 = tarfile.open('./data/cifar-10-python.tar.gz')
+cifar10.extractall('./data')
+cifar10.close()
+```
+
