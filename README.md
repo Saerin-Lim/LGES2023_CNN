@@ -2,10 +2,13 @@
 
 ### 실습 준비
 
-1. 구글 드라이브 연동(Local PC로 실습하는 경우 실행 x)
+0. 필요 패키지
 ```py
 import zipfile, tarfile
-from google.colab import drive
+from google.colab import drive # Local PC로 실습하는 경우 실행 x
+```
+1. 구글 드라이브 연동(Local PC로 실습하는 경우 실행 x)
+```py
 drive.mount('/content/drive')
 ```
 
@@ -16,8 +19,8 @@ drive.mount('/content/drive')
 
 3. cat_dog data 풀기
 ```py
-# change directory
-%cd /content/LGES2023_CNN/
+# change directory # Local PC로 실습하는 경우 실행 x
+%cd /content/LGES2023_CNN/ 
 ```
 ```py
 dog_cat_zip = zipfile.ZipFile('./data/dog_cat.zip')
