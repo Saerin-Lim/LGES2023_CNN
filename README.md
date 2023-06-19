@@ -10,6 +10,7 @@ from google.colab import drive # Local PC로 실습하는 경우 실행 x
 1. 구글 드라이브 연동(Local PC로 실습하는 경우 실행 x)
 ```py
 drive.mount('/content/drive')
+%cd /content/drive/MyDrive
 ```
 
 2. git에서 가져오기
@@ -20,7 +21,7 @@ drive.mount('/content/drive')
 3. cat_dog data 압축풀기
 ```py
 # change directory # Local PC로 실습하는 경우 실행 x
-%cd /content/LGES2023_CNN/ 
+%cd LGES2023_CNN/
 ```
 ```py
 dog_cat_zip = zipfile.ZipFile('./data/dog_cat.zip')
