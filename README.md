@@ -35,3 +35,7 @@ heros_zip.extractall('./data')
 heros_zip.close()
 ```
 
+5. torchsummary 설치
+```py
+!pip install torchsummary
+```
